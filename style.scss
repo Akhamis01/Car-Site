@@ -1,0 +1,192 @@
+$Wcolor: #d5d5d5;
+%title{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+}
+
+/* Index.html */
+body{
+    font-family: sans-serif;
+    background-color: rgb(194, 192, 192);
+  }
+  .lambo-logo:hover .image1{
+    opacity: 0.3;
+    transition: 0.3s ease;
+  }
+  .image1{
+    height: auto;
+    max-width: 44px;
+  }
+  #lambo-video{
+    position: fixed;
+    height: 100vh;
+    min-height: 100%;
+  }
+  .content {
+    position: fixed;
+    top: 38%;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  .caption h1{
+    @extend %title;
+    font-size: 300%;
+  }
+  .caption h3{
+    font-size: 200%;
+    text-shadow: 1px 1px 15px #000;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  #button1{
+    text-align: center;
+  }
+  
+  /* Models.html */
+  #nav-icon:hover{
+    opacity: 0.5;
+    transition: 0.2s ease;
+  }
+  .carousel-inner img{
+    width: 100%;
+    height: auto;
+    max-height: 92vh;
+  }
+  .carousel-caption h1{
+    @extend %title;
+    position: absolute;
+    bottom: 60%;
+    font-size: 350%;
+  }
+  .padding{
+      padding-top: 2rem;
+  }
+  footer a{
+    color: $Wcolor;
+  }
+  footer{
+    background-color: #3f3f3f;
+    color: $Wcolor;
+    padding-top: 2rem;
+  }
+  hr.light-hr{
+    border-top: 1px solid $Wcolor;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+  hr.light{
+    border-top: 1px solid $Wcolor;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+  .head-color{
+    color: orange;
+  }
+  .social a{
+    font-size: 2em;
+    padding-right: 1.5rem;
+  }
+  /* Specs.html */
+  .fa-facebook{
+    color: #23a4d3;
+  }
+  .fa-twitter{
+    color: #00aced;
+  }
+  .fa-google-plus-g{
+    color: red;
+  }
+  .fa-instagram{
+    color: lightblue;
+  }
+  .fa-youtube{
+    color: #bb0000;
+  }
+  .fa-facebook:hover, .fa-twitter:hover, .fa-google-plus-g:hover, .fa-instagram:hover, .fa-youtube:hover{
+    color: $Wcolor;
+  }
+  /* Contact.html */
+  #pad{
+    padding-bottom: 10px;
+  }
+  #form-pad{
+    padding: 2rem;
+  }
+  .form{
+    max-width: 600px;
+  }
+  #Hur img{
+    max-height: 400px;
+    max-width: 492px;
+    padding-bottom: 2rem;
+  }
+  
+@media (max-width: 768px) {
+    .image1{
+      height: auto;
+      max-width: 38px;
+    }
+    #lambo-video{
+      left: -800px;
+    }
+
+    .caption{
+        h1{
+            font-size: 240%;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 15px #000;
+        }
+        h3{
+            font-size: 180%;
+            text-shadow: 1px 1px 15px #000;
+            padding-bottom: 1rem;
+            text-align: center; 
+        }
+    }
+    
+    .carousel-caption h1{
+      font-size: 200%;
+    }
+    #Hur img{
+      height: 350px;
+      width: 475px;
+      padding-bottom: 2rem;
+    }
+  }
+    
+  
+@media (max-width: 576px) {
+    .image1{
+      height: auto;
+      max-width: 38px;
+    }
+    #lambo-video{
+      left: -550px;
+    }
+
+    .caption{
+        h1{
+            font-size: 200%;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 15px #000;
+        }
+        h3{
+            font-size: 125%;
+            text-shadow: 1px 1px 15px #000;
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+    }
+
+    .carousel-caption h1{
+      font-size: x-large;
+    }
+    #Hur img{
+      height: 350px;
+      width: 475px;
+      padding-bottom: 2rem;
+    }
+  }
